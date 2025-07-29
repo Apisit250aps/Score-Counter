@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Badminton Scorer - เครื่องนับแต้มแบดมินตัน</title>
+  <meta name="title" content="Badminton Scorer - เครื่องนับแต้มแบดมินตัน" />
+  <meta name="description"
+    content="แอพนับคะแนนแบดมินตันแบบเรียลไทม์ พร้อมจับเวลา ระบบคะแนนแบดมินตันมาตรฐาน ใช้งานง่าย บนมือถือและคอมพิวเตอร์" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="Badminton Scorer - เครื่องนับแต้มแบดมินตัน" />
+  <meta property="og:description"
+    content="แอพนับคะแนนแบดมินตันแบบเรียลไทม์ พร้อมจับเวลา ระบบคะแนนแบดมินตันมาตรฐาน ใช้งานง่าย บนมือถือและคอมพิวเตอร์" />
+  <meta property="og:image"
+    content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='600' height='630' fill='%23f9a8d4'/%3E%3Crect x='600' width='600' height='630' fill='%2338bdf8'/%3E%3Ctext x='300' y='250' text-anchor='middle' fill='white' font-family='Arial' font-size='120' font-weight='bold'%3E0%3C/text%3E%3Ctext x='900' y='250' text-anchor='middle' fill='white' font-family='Arial' font-size='120' font-weight='bold'%3E0%3C/text%3E%3Ctext x='600' y='400' text-anchor='middle' fill='white' font-family='Arial' font-size='48' font-weight='bold'%3EBadminton Scorer%3C/text%3E%3Ctext x='600' y='460' text-anchor='middle' fill='white' font-family='Arial' font-size='32'%3E🏸 เครื่องนับแต้มแบดมินตัน%3C/text%3E%3C/svg%3E" />
+
+  <!-- X (Twitter) -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="" />
+  <meta property="twitter:title" content="Badminton Scorer - เครื่องนับแต้มแบดมินตัน" />
+  <meta property="twitter:description"
+    content="แอพนับคะแนนแบดมินตันแบบเรียลไทม์ พร้อมจับเวลา ระบบคะแนนแบดมินตันมาตรฐาน ใช้งานง่าย บนมือถือและคอมพิวเตอร์" />
+  <meta property="twitter:image"
+    content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='600' height='630' fill='%23f9a8d4'/%3E%3Crect x='600' width='600' height='630' fill='%2338bdf8'/%3E%3Ctext x='300' y='250' text-anchor='middle' fill='white' font-family='Arial' font-size='120' font-weight='bold'%3E0%3C/text%3E%3Ctext x='900' y='250' text-anchor='middle' fill='white' font-family='Arial' font-size='120' font-weight='bold'%3E0%3C/text%3E%3Ctext x='600' y='400' text-anchor='middle' fill='white' font-family='Arial' font-size='48' font-weight='bold'%3EBadminton Scorer%3C/text%3E%3Ctext x='600' y='460' text-anchor='middle' fill='white' font-family='Arial' font-size='32'%3E🏸 เครื่องนับแต้มแบดมินตัน%3C/text%3E%3C/svg%3E" />
+
+  <!-- Favicon และ Icons -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='16' height='32' fill='%23f9a8d4'/%3E%3Crect x='16' width='16' height='32' fill='%2338bdf8'/%3E%3Ctext x='8' y='20' text-anchor='middle' fill='white' font-family='Arial' font-size='14' font-weight='bold'%3E0%3C/text%3E%3Ctext x='24' y='20' text-anchor='middle' fill='white' font-family='Arial' font-size='14' font-weight='bold'%3E0%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Crect width='90' height='180' fill='%23f9a8d4' rx='20'/%3E%3Crect x='90' width='90' height='180' fill='%2338bdf8' rx='20'/%3E%3Ctext x='45' y='100' text-anchor='middle' fill='white' font-family='Arial' font-size='60' font-weight='bold'%3E0%3C/text%3E%3Ctext x='135' y='100' text-anchor='middle' fill='white' font-family='Arial' font-size='60' font-weight='bold'%3E0%3C/text%3E%3Ctext x='90' y='140' text-anchor='middle' fill='white' font-family='Arial' font-size='16' font-weight='bold'%3E🏸%3C/text%3E%3C/svg%3E">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest"
+    href="data:application/json,%7B%22name%22%3A%22Badminton%20Scorer%22%2C%22short_name%22%3A%22Badminton%22%2C%22description%22%3A%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%95%E0%B9%89%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%94%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B8%99%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%23f9a8d4%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%2C%253Csvg%2520xmlns%253D%2527http%253A//www.w3.org/2000/svg%2527%2520width%253D%2527192%2527%2520height%253D%2527192%2527%2520viewBox%253D%25270%25200%2520192%2520192%2527%253E%253Crect%2520width%253D%252796%2527%2520height%253D%2527192%2527%2520fill%253D%2527%2523f9a8d4%2527/%253E%253Crect%2520x%253D%252796%2527%2520width%253D%252796%2527%2520height%253D%2527192%2527%2520fill%253D%2527%252338bdf8%2527/%253E%253Ctext%2520x%253D%252748%2527%2520y%253D%2527110%2527%2520text-anchor%253D%2527middle%2527%2520fill%253D%2527white%2527%2520font-family%253D%2527Arial%2527%2520font-size%253D%252760%2527%2520font-weight%253D%2527bold%2527%253E0%253C/text%253E%253Ctext%2520x%253D%2527144%2527%2520y%253D%2527110%2527%2520text-anchor%253D%2527middle%2527%2520fill%253D%2527white%2527%2520font-family%253D%2527Arial%2527%2520font-size%253D%252760%2527%2520font-weight%253D%2527bold%2527%253E0%253C/text%253E%253Ctext%2520x%253D%252796%2527%2520y%253D%2527150%2527%2520text-anchor%253D%2527middle%2527%2520fill%253D%2527white%2527%2520font-family%253D%2527Arial%2527%2520font-size%253D%252720%2527%253E%25F0%259F%258F%25B8%253C/text%253E%253C/svg%253E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image/svg%2Bxml%22%7D%2C%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%2C%253Csvg%2520xmlns%253D%2527http%253A//www.w3.org/2000/svg%2527%2520width%253D%2527512%2527%2520height%253D%2527512%2527%2520viewBox%253D%25270%25200%2520512%2520512%2527%253E%253Crect%2520width%253D%2527256%2527%2520height%253D%2527512%2527%2520fill%253D%2527%2523f9a8d4%2527/%253E%253Crect%2520x%253D%2527256%2527%2520width%253D%2527256%2527%2520height%253D%2527512%2527%2520fill%253D%2527%252338bdf8%2527/%253E%253Ctext%2520x%253D%2527128%2527%2520y%253D%2527300%2527%2520text-anchor%253D%2527middle%2527%2520fill%253D%2527white%2527%2520font-family%253D%2527Arial%2527%2520font-size%253D%2527160%2527%2520font-weight%253D%2527bold%2527%253E0%253C/text%253E%253Ctext%2520x%253D%2527384%2527%2520y%253D%2527300%2527%2520text-anchor%253D%2527middle%2527%2520fill%253D%2527white%2527%2520font-family%253D%2527Arial%2527%2520font-size%253D%2527160%2527%2520font-weight%253D%2527bold%2527%253E0%253C/text%253E%253Ctext%2520x%253D%2527256%2527%2520y%253D%2527400%2527%2520text-anchor%253D%2527middle%2527%2520fill%253D%2527white%2527%2520font-family%253D%2527Arial%2527%2520font-size%253D%252760%2527%253E%25F0%259F%258F%25B8%253C/text%253E%253C/svg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image/svg%2Bxml%22%7D%5D%7D">
+
+  <!-- Theme Color -->
+  <!-- <meta name="theme-color" content="#f9a8d4">
+  <meta name="msapplication-TileColor" content="#f9a8d4"> -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="h-screen m-0 p-0 select-none">
+
+  <div id="app" class="flex h-full relative">
+    <!-- Timer แสดงเล็กๆ มุมบนซ้าย -->
+    <div class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm z-10">
+      {{ formatTime(elapsedTime) }}
+    </div>
+
+    <!-- ฝั่งผู้เล่น 1 -->
+    <div class="flex-1 bg-pink-300 flex flex-col justify-center items-center active:opacity-80 transition-all"
+      @click="addScore(1)">
+      <h1 class="text-4xl font-bold text-white mb-4">A</h1>
+      <div class="text-9xl font-bold text-white">{{ player1 }}</div>
+      <button @click.stop="removeScore(1)" class="mt-4 bg-white/50 text-white px-4 py-2 rounded text-sm">
+        -1
+      </button>
+    </div>
+
+    <!-- ฝั่งผู้เล่น 2 -->
+    <div class="flex-1 bg-sky-400 flex flex-col justify-center items-center active:opacity-80 transition-all"
+      @click="addScore(2)">
+      <h1 class="text-4xl font-bold text-white mb-4">B</h1>
+      <div class="text-9xl font-bold text-white">{{ player2 }}</div>
+      <button @click.stop="removeScore(2)" class="mt-4 bg-white/50 text-white px-4 py-2 rounded text-sm">
+        -1
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+    createApp({
+      data() {
+        return {
+          player1: 0,
+          player2: 0,
+          targetScore: 11,
+          maxScore: 24,
+          elapsedTime: 0,
+          isRunning: false,
+          timerInterval: null
+        };
+      },
+      mounted() {
+        // Auto start timer
+        this.startTimer();
+      },
+      methods: {
+        addScore(player) {
+          if (player === 1) {
+            this.player1++;
+          } else {
+            this.player2++;
+          }
+          this.checkWin();
+        },
+
+        removeScore(player) {
+          if (player === 1 && this.player1 > 0) {
+            this.player1--;
+          } else if (player === 2 && this.player2 > 0) {
+            this.player2--;
+          }
+        },
+
+        checkWin() {
+          const p1 = this.player1;
+          const p2 = this.player2;
+
+          // ถ้าทั้งคู่ถึง 10 คะแนน ให้เล่นต่อจนกว่าจะห่าง 2 แต้ม (แต่ไม่เกิน 24)
+          if (p1 >= 10 && p2 >= 10) {
+            // ถ้าใครคนหนึ่งถึง 24 แล้ว ชนะเลย
+            if (p1 >= 24 || p2 >= 24) {
+              this.declareWinner();
+              return;
+            }
+            // ถ้ายังไม่ถึง 24 ต้องห่าง 2 แต้ม
+            if (Math.abs(p1 - p2) >= 2) {
+              this.declareWinner();
+              return;
+            }
+          }
+          // ถ้าไม่ได้ทั้งคู่ 10+ ให้ใครถึง 11 ก่อนชนะ
+          else if (p1 >= this.targetScore || p2 >= this.targetScore) {
+            this.declareWinner();
+            return;
+          }
+        },
+
+        declareWinner() {
+          this.pauseTimer();
+          const winner = this.player1 > this.player2 ? 'A' : 'B';
+          const finalTime = this.formatTime(this.elapsedTime);
+
+          Swal.fire({
+            title: '🏆 Game Over!',
+            html: `
+              <div class="text-lg">
+                <p><strong>${winner} Wins!</strong></p>
+                <p>Final Score: ${this.player1} - ${this.player2}</p>
+                <p>Game Time: ${finalTime}</p>
+              </div>
+            `,
+            icon: 'success',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            // Reset เกมเมื่อกดปุ่ม OK
+            this.player1 = 0;
+            this.player2 = 0;
+            this.elapsedTime = 0;
+            this.startTimer();
+          });
+        },
+
+        startTimer() {
+          if (!this.isRunning) {
+            this.isRunning = true;
+            this.timerInterval = setInterval(() => {
+              this.elapsedTime++;
+            }, 1000);
+          }
+        },
+
+        pauseTimer() {
+          this.isRunning = false;
+          if (this.timerInterval) {
+            clearInterval(this.timerInterval);
+            this.timerInterval = null;
+          }
+        },
+
+        formatTime(seconds) {
+          const minutes = Math.floor(seconds / 60);
+          const remainingSeconds = seconds % 60;
+          return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+      },
+
+      beforeUnmount() {
+        if (this.timerInterval) {
+          clearInterval(this.timerInterval);
+        }
+      }
+    }).mount('#app');
+  </script>
+
+</body>
+
+</html>
